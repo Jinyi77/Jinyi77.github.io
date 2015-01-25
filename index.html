@@ -7,3 +7,10 @@ title: Name of My Website
 			<h1>Hi there, I'm Jiiinyi</h1>
 			<p>This is a Jekyll website template created by <a href="http://jmcglone.com">Jonathan McGlone</a>. It is very basic, responsive (looks nice in mobile devices), and was built with HTML5 and CSS3. You are free to copy, re-use, hack, modify, and tinker with this as much as you'd like without his permission. <a href="/about">Learn more...</a></p>
 		</div>
+　　<h2>{{ page.title }}</h2>
+　　<p>最新文章</p>
+　　<ul>
+　　　　{% for post in site.posts %}
+　　　　　　<li>{{ post.date | date_to_string }} <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></li>
+　　　　{% endfor %}
+　　</ul>
