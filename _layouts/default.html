@@ -1,30 +1,34 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Jinyi</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>HI THERE, I AM JINYI</h1>
-				<p>Hi there , I am jinyi<a href="/about">  Read more</a></p>
-    		</div><!-- /.blurb -->
-		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:Jinyi.likes.Kiwi@gmail.com">email</a></li>
-        		<li><a href="https://github.com/Jinyi77">github.com/jinyi77</a></li>
-			</ul>
-		</footer>
-	</body>
+  <head>
+    <title>{{ page.title }}</title>
+    
+    <link rel="stylesheet" type="text/css" href="/css/main.css">
+  
+  </head>
+
+
+  <body>
+    <nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+    </nav>
+<div class="container">
+
+  {{ content }}
+
+</div>
+  
+  <footer>
+   <ul>
+   <li><a href="mailto:jinyi.likes.kiwi@gmail.com">email</a></li>
+   <li><a href="https://github.com/jinyi77">github.com/jinyi77</a></li>
+   </ul>
+  </footer>
+  </body>
+
 </html>
