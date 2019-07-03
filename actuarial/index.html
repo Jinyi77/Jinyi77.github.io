@@ -5,8 +5,8 @@ title: Actuarial Science
 <h1>{{ page.title }}</h1>
 <ul class="posts">
 
-  {% for post in site.actuarialposts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></li>
+  {% for posta in site.actuarialposts %}
+    <li><span>{{ posta.date | date_to_string }}</span> &raquo; <a href="{{ posta.url }}" title="{{ posta.title }}">{{ posta.title }}</a></li>
   {% endfor %}
     
 </ul>
